@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>15_07_task</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#TxtTestFocus").focus(function(){
+                    $(this).css("backgroundColor","red");
+                });
+
+                $("#TxtTestBlur").blur(function(){
+                    $(this).css("backgroundColor","yellow");
+                });
+
+                $("#TxtTestKeyPress").keypress(function(){
+                    alert($(this).val());
+                });
+
+                $("#TxtTestkeyup").keyup(function(){
+                    alert($(this).val());
+                });
+                
+            });
+        </script>
+
+    </head>
+    <body>
+        <h2>jquery example</h2>
+        <input type="text" id="TxtTestFocus" placeholder="Check the box"><br><br>
+        <input type="text" id="TxtTestBlur" placeholder="Check the box"><br><br>
+        <input type="text" id="TxtTestKeyPress" placeholder="Check the box"><br><br>
+        <input type="text" id="TxtTestkeyup" placeholder="Check the box"><br><br>
+
+        
+    </body>
+</html>
